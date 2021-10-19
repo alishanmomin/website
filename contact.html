@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOMIN</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/802409dd86.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="images/Capture.JPG" a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">CRICKET</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d57887.8100056226!2d67.0777182444877!3d24.93247444231349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3eb338bf22becb0f%3A0xd5e50842c5c4867b!2sNED%20University%20Of%20Engineering%20%26%20Technology%2C%20Karachi!3m2!1d24.9324007!2d67.1127379!5e0!3m2!1sen!2s!4v1634635471878!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>
+                        <h5>Main University Rd.</h5>
+                        <p>Karachi, Pakistan</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                        <h5>mominalishan@gmail.com</h5>
+                        <p>Email us</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                        <h5>+923330003303</h5>
+                        <p>Call us at anytime</p>
+                    </span>
+                </div>
+
+
+            </div>
+            <div class="contact-col">
+                <form >
+
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button class="hero-btn about ">POST</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Eduford University is one of the most successful worldwide best ranked university</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>eduford university pvt ltd. 2020-2021</p>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+
+        var navLinks = document.getElementById('navLinks')
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
