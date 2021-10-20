@@ -6,7 +6,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url("images/stadium.jpg");
+    url("assets/scenery.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -62,9 +62,15 @@ nav img {
 .text-box h1 {
   font-size: 70px;
   color: rgb(233, 234, 235);
+  letter-spacing: 0.2em;
+  margin-top: 0.4em;
+}
+.plain {
+  letter-spacing: 0em;
 }
 .text-box p {
   margin: 10px;
+  font-size: 25px;
 }
 .hero-btn {
   display: inline-block;
@@ -110,16 +116,20 @@ p {
   justify-content: space-between;
 }
 .course-col {
-  flex-basis: 31%;
-  background: #fff3f3;
+  flex-basis: 30%;
+  background: #fff5ca;
+  color: #152c10ad;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
   margin: 2%;
 }
+.course-col p {
+  color: #152c10ad;
+}
 .course-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0px rgba(243, 12, 12, 0.2);
   transition: 0.5s;
 }
 h3 {
@@ -131,7 +141,7 @@ h3 {
 /* css for campus  */
 
 .campus {
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-align: center;
   padding-top: 10%;
@@ -142,6 +152,7 @@ h3 {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  height: fit-content;
 }
 .campus-col img {
   width: 100%;
@@ -158,12 +169,12 @@ h3 {
   transition: 0.5s;
 }
 .layer:hover {
-  background: rgba(207, 204, 204, 0.7);
+  background: rgba(122, 122, 122, 0.7);
 }
 .layer h3 {
   width: 100%;
   font-weight: 500;
-  color: #fff;
+  color: rgb(247, 230, 230);
   font-size: 26px;
   bottom: 0;
   left: 50%;
@@ -183,6 +194,7 @@ h3 {
   margin: auto;
   width: 80%;
   padding-top: 10%;
+  height: 60%;
 }
 .facility-col {
   flex-basis: 32%;
@@ -253,7 +265,7 @@ h3 {
   margin: 100px auto;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/banner2.jpg);
+    url(assets/stumps1.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -278,22 +290,26 @@ h3 {
 }
 .footer h4 {
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 30px;
   font-weight: 600px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .icons .fa {
   color: #384611;
   cursor: pointer;
+  padding: 20px;
 }
 
 /*-------------- Media query for main layout------------------- */
 
 @media (max-width: 700px) {
   .text-box h1 {
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(233, 234, 235);
+  }
+  .text-box p {
+    font-size: 20px;
   }
   .nav-links ul li {
     display: block;
@@ -332,7 +348,7 @@ h3 {
   min-height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url("images/background.jpg");
+    url("assets/stumpsrest.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -344,14 +360,19 @@ h3 {
   margin-top: 25px;
 }
 .about-us {
-  width: 80%;
+  width: 70%;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
 }
 .about-col {
-  flex-basis: 48%;
+  flex-basis: 40%;
   padding: 30px 2px;
+}
+.about-col h2 {
+  padding-top: 3px;
+  font-size: 20px;
+  margin-left: 20px;
 }
 .about-col img {
   width: 100%;
@@ -365,6 +386,18 @@ h3 {
 }
 .about-col p {
   padding: 15px 0px 25px;
+}
+
+@media (max-width: 700px) {
+  .about-col h1 {
+    font-size: 30px;
+  }
+  .about-us {
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
 }
 
 /* css for blog content */

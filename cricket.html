@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOMIN</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/802409dd86.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="assets/Capture.JPG">
+              <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="cricket.html">CRICKET</a></li>
+                  <li><a href="academy.html">ACADEMY</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                        
+                </ul>
+              </div>           
+              <i class="fa fa-bars" onclick="showMenu()"></i>    
+        </nav>
+       
+ 
+    </section>
+
+
+<!-- Adding courses     -->
+<!-- Facility -->
+<section class="facility">
+  <h1>Classic Shots</h1>
+  <p>This is best when it comes to class</p>
+
+  <div class="row">
+
+    <div class="facility-col">
+      <img src="assets/batting4.jpg" >
+      <h3>AB de Villiers</h3>
+      <p>From middle of the bat. Up and over cover</p>
+    </div>
+
+    <div class="facility-col">
+      <img src="assets/batting1.jpg" >
+      <h3>Babar Azam</h3>
+      <p>Holding a pose. Sqaure drive, right under his eyes</p>
+    </div>
+
+    <div class="facility-col">
+      <img src="assets/batting3.jpg" >
+      <h3>AB de Villiers</h3>
+      <p>High and handsome, goes all the way</p>
+    </div>
+
+  </div>
+  <h1>Stump Castle</h1>
+  <p>Visuals that batsmen don't want to see</p>
+
+  <div class="row">
+
+    <div class="facility-col">
+      <img src="assets/cricket1.jpg" >
+      <h3>Abid Ali</h3>
+      <p>Missed straigter one off Jofra Archer</p>
+    </div>
+
+    <div class="facility-col">
+      <img src="assets/cricket2.jpg" >
+      <h3>Ben Stokes</h3>
+      <p>Absolute beauty from Abbas, top of off stumps. Perfect</p>
+    </div>
+
+    <div class="facility-col">
+      <img src="assets/cricket3.jpg" >
+      <h3>Aron FInch</h3>
+      <p>Flashing lights behind stumps. Crocker of an delivery</p>
+    </div>
+
+  </div>
+ 
+  <h1>Breathtaking Catches</h1>
+  <p>This is best when it comes to learning</p>
+
+  <div class="row">
+
+    <div class="facility-col">
+      <img src="assets/catch1.jpg" >
+      <h3>Jonty Rohdes</h3>
+      <p>Unbeliveable catch from the best of all time</p>
+    </div>
+
+    <div class="facility-col">
+      <img src="assets/catch2.jpg" >
+      <h3>Nathon Lyon</h3>
+      <p>Takes one handed stunner of his own bowling, full length dive</p>
+    </div>
+
+    <div class="facility-col">
+      <img src="assets/catch3.jpg" >
+      <h3>Sanju Samson</h3>
+      <p>Athletic work, cool and calm Sanju taking some serious catch</p>
+    </div>
+
+  </div>
+ 
+</section>
+
+
+
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright &copy; Momin Academy 2021-2022</p>
+</section>
+<!-- Javascript for toggle menu -->
+<script>
+
+  var navLinks = document.getElementById('navLinks')
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right = "-200px";
+  }
+</script>
+  </body>
+</html>
